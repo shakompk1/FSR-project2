@@ -1,4 +1,168 @@
-h1 {
-  color: red;
-  background: red;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#AboutUs {
+  width: 100%;
+  background: url("../img/aboutus/background.png") center/cover no-repeat;
+}
+
+#AboutUs .container {
+  height: 100vh;
+  max-width: 1234px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#AboutUs .container .AboutUsTitle {
+  margin: 0 auto 131px;
+  font: italic 900 48px/183.8% Roboto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #464646;
+}
+
+#AboutUs .container .AboutUsMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#AboutUs .container .AboutUsMain div {
+  max-width: 324px;
+}
+
+#AboutUs .container .AboutUsMain div div {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #A6B7FF;
+  border-radius: 180%;
+  text-align: center;
+}
+
+#AboutUs .container .AboutUsMain div h2 {
+  font-family: normal bold 30px/183.8% Roboto;
+  text-align: center;
+  color: #000000;
+}
+
+#AboutUs .container .AboutUsMain div p {
+  font-family: normal normal 18px/22px Calibri;
+  text-align: center;
+}
+
+#AboutUs .container .OurTeamTitle {
+  margin: 43px auto 14px;
+  font: 900 normal 30px/183.8% Roboto;
+  text-align: center;
+  color: #464646;
+}
+
+#AboutUs .container .OurTeamMain {
+  width: 500px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AboutUs .container .OurTeamMain div {
+  width: 108px;
+  height: 98px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#AboutUs .container .OurTeamMain div span {
+  margin: 14px auto auto;
+  border: 6px solid #FFBABA;
+  border-radius: 180%;
+}
+
+#ContactUs {
+  width: 100%;
+  background: url("../img/contactus/background.png") center/cover no-repeat;
+}
+
+#ContactUs .container {
+  height: 100vh;
+  max-width: 1234px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#ContactUs .ShortInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ContactUs .ShortInfo .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 305px;
+  height: 152px;
+  border: 2px solid #D8E0FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 40px;
+}
+
+#ContactUs .ShortInfo .lineRow {
+  width: 164px;
+  border: 2px solid #D8E0FF;
 }

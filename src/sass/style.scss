@@ -1,4 +1,113 @@
-h1{
-    color:red;
-    background: red;
+$container-width: 1234px;
+body{
+    margin: 0;
+    padding: 0;
+}
+#AboutUs{
+    width: 100%;
+    background:url('../img/aboutus/background.png') center/cover no-repeat;
+     
+    .container{
+        height: 100vh;
+        max-width: $container-width;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;
+        .AboutUsTitle{
+            margin:0 auto 131px;
+            font:italic 900 48px/183.8% Roboto;
+            text-align: center;
+            text-transform: uppercase;
+            color: #464646;
+        }   
+        .AboutUsMain{
+            display: flex;
+            justify-content: space-around;
+            div{
+                max-width: 324px;
+                div{
+                    width: 120px;
+                    height: 120px;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background:#A6B7FF;
+                    border-radius: 180%;
+                    text-align: center;
+                }
+                h2{
+                    font-family:normal bold 30px/183.8% Roboto;
+                    text-align: center;
+                    color: #000000;
+                }
+                p{
+                    font-family:normal normal 18px/22px Calibri;
+                    text-align: center;
+                }
+            }
+        }
+        .OurTeamTitle{
+            margin: 43px auto 14px;
+            font:900 normal 30px/183.8% Roboto; 
+            text-align: center;
+            color: #464646;
+        }
+        .OurTeamMain{
+            width: 500px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            div{
+                width: 108px;
+                height: 98px;
+                background:rgba(0, 0, 0, 0.25);
+                border-radius: 28px;
+                display: flex;
+                flex-direction: column;
+                span{
+                    margin:14px auto auto;
+                    border:6px solid #FFBABA;
+                    border-radius:180%;
+                }                
+            }
+        }
+    }
+}
+#ContactUs{
+    width: 100%;
+    background:url('../img/contactus/background.png') center/cover no-repeat;
+    .container{
+        height: 100vh;
+        max-width: $container-width;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;      
+
+    }
+    .ShortInfo{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            width: 305px;
+            height: 152px;
+            border: 2px solid #D8E0FF;
+            box-sizing: border-box;
+            border-radius: 40px;
+            i{
+                
+            }
+        }
+        .lineRow{
+            width: 164px;
+            border: 2px solid #D8E0FF;
+        }
+    } 
 }
