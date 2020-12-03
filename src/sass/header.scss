@@ -1,0 +1,85 @@
+.container{
+  width: 1234px;
+}
+header{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background: rgba(216, 224, 255, 0.7);
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+      width: 30%;
+      ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a{
+            font-style: italic;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 183.8%;
+            color: #858585;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 39%;
+    }
+    .lang{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 15%;
+      position: relative;
+      cursor: pointer;
+    }
+    .lang img:hover + .languages{
+      display: flex;
+
+    }
+    .languages:hover{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .languages div:hover{
+      padding: 5px 10px;
+      background:lightblue;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: .5s;
+    }
+    .languages{
+      display: none;
+      position: absolute;
+      overflow: hidden;
+      padding: 10px;
+      animation:listDrop .7s forwards;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      width: 30%;
+      top: 85%;
+      z-index: 99;
+      border: 1px solid black;
+    }
+  }
+  @keyframes listDrop{
+    from{ height: 0;}
+    to{height: 120px;}
+  }
+}
