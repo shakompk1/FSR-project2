@@ -11,6 +11,19 @@ module.exports = {
     module: {
         "rules": [
             {
+                test: /\.(png|jpg|gif|svg)$/,
+                exclude: [
+                    path.resolve(__dirname, './node_modules'),
+                ],
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name]-[hash].[ext]',
+                        outputPath: '../',
+                    },
+                },
+            },
+            {
                 "test": /\.scss$/,
                 "use":[
                     'style-loader',
@@ -32,7 +45,7 @@ module.exports = {
                                 ]
                             }
                         }
-                    }
+                    },
                 ]
             }
         ]
