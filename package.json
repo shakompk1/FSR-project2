@@ -12,7 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "npx babel dist --out-dir dist",
     "webpack": "npx webpack",
-    "build": "webpack"
+    "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
