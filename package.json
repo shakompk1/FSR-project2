@@ -11,7 +11,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "npx babel dist --out-dir dist",
-    "webpack": "npx webpack"
+    "webpack": "npx webpack",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +21,7 @@
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "autoprefixer": "^10.0.4",
-    "file-loader": "^6.2.0",
+    "clean-webpack-plugin": "^3.0.0",
     "mini-css-extract-plugin": "^1.3.1",
     "node-sass": "^5.0.0",
     "postcss-loader": "^4.1.0",

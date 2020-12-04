@@ -1,28 +1,17 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     mode:'development',
-
     entry:'./src/index.js',
     output: {
         filename: "main.js",
         path:path.resolve(__dirname,'dist')
     },
-    watch: true,
+    plugins: [
+        new CleanWebpackPlugin()
+    ],
     module: {
         "rules": [
-            {
-                test: /\.(png|jpg|gif|svg)$/,
-                exclude: [
-                    path.resolve(__dirname, './node_modules'),
-                ],
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        name: '[path][name]-[hash].[ext]',
-                        outputPath: '../dist',
-                    },
-                },
-            },
             {
                 "test": /\.scss$/,
                 "use":[
@@ -47,7 +36,14 @@ module.exports = {
                         }
                     },
                 ]
-            }
-        ]
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename:'img/[hash][ext]'
+                }
+            },
+        ],
     }
 };
