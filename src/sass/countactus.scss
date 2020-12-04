@@ -1,0 +1,53 @@
+$container-width: 1234px;
+#ContactUs{
+    width: 100%;
+    background:url('../img/contactus/background.png') center/cover no-repeat;
+    .container{
+        min-height: 100vh;
+        max-width: $container-width;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:  space-around;      
+
+    }
+    .ContactUsTitle{
+        margin: 42px auto auto;
+        font:900 italic 48px/183.8% Roboto;
+        text-align: center;
+    }
+    .ShortInfo{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        margin: 86px auto 0;
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            width: 305px;
+            height: 152px;
+            border: 2px solid #D8E0FF;
+            box-sizing: border-box;
+            border-radius: 40px;
+            i{
+                color:#D8E0FF;
+            }
+            a{
+                margin-top: 17px;
+                font:normal normal 21px/183.8% Belgrano;
+            }
+        }
+        .lineRow{
+            width: 164px;
+            border: 2px solid #D8E0FF;
+        }
+    }
+    .lineColumn{
+        margin: 0 auto;
+        width: 1px;
+        height: 45px;
+        border: 2px solid #D8E0FF;
+    }
+}

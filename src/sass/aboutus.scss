@@ -1,14 +1,10 @@
 $container-width: 1234px;
-body{
-    margin: 0;
-    padding: 0;
-}
 #AboutUs{
     width: 100%;
     background:url('../img/aboutus/background.png') center/cover no-repeat;
      
     .container{
-        height: 100vh;
+        min-height: 100vh;
         max-width: $container-width;
         margin:0 auto;
         display: flex;
@@ -38,6 +34,7 @@ body{
                     text-align: center;
                 }
                 h2{
+                    margin: 23px auto 40px;
                     font-family:normal bold 30px/183.8% Roboto;
                     text-align: center;
                     color: #000000;
@@ -75,36 +72,4 @@ body{
             }
         }
     }
-}
-#ContactUs{
-    width: 100%;
-    background:url('../img/contactus/background.png') center/cover no-repeat;
-    .container{
-        height: 100vh;
-        max-width: $container-width;
-        margin:0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content:  space-around;      
-
-    }
-    .ShortInfo{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        .row{
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            width: 305px;
-            height: 152px;
-            border: 2px solid #D8E0FF;
-            box-sizing: border-box;
-            border-radius: 40px;
-        }
-        .lineRow{
-            width: 164px;
-            border: 2px solid #D8E0FF;
-        }
-    } 
 }
