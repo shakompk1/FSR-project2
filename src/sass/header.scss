@@ -33,9 +33,10 @@ header{
     }
     .logo{
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
-      width: 39%;
+      width: 22%;
+      margin-left: 10px;
     }
     .lang{
       display: flex;

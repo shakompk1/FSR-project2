@@ -16,6 +16,9 @@ $text-color:#464646;
       align-items: center;
       width: 100%;
       padding-bottom: 54px;
+      a{
+        margin: 5px;
+      }
     }
     .swiper-container{
       width: 100%;
@@ -33,7 +36,7 @@ $text-color:#464646;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 70%;
+          width:100%;
           margin: 0 auto;
         }
         .sliderText{
