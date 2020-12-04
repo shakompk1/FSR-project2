@@ -11,8 +11,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "npx babel dist --out-dir dist",
+    "server": "nodemon server/server.js",
     "webpack": "npx webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "dev": "npx webpack  && nodemon server/server.js\""
   },
   "author": "",
   "license": "ISC",
@@ -30,10 +32,14 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "css-loader": "^5.0.1",
     "express": "^4.17.1",
     "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.4",
     "path": "^0.12.7",
+    "prop-types": "^15.7.2",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0"
   }
